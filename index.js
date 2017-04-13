@@ -40,6 +40,6 @@ function prune(obj) {
 }
 
 module.exports = prune
-module.exports.pruneEmptyArrays = pruneEmptyArrays
-module.exports.pruneEmptyObjects = pruneEmptyObjects
-module.exports.pruneEmptyStrings = pruneEmptyStrings
+module.exports.emptyArrays = pruneEmptyArrays
+module.exports.emptyObjects = pruneEmptyObjects
+module.exports.emptyStrings = pruneEmptyStrings
