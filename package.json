@@ -1,12 +1,12 @@
 {
   "name": "object-prune",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "index.js",
   "repository": "https://github.com/kba/object-prune",
   "author": "Konstantin Baierer <unixprog@gmail.com>",
   "license": "MIT",
   "scripts": {
-      "test": "tap test.js"
+    "test": "tap test.js"
   },
   "devDependencies": {
     "tap": "^10.3.2"
