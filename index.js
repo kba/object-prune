@@ -1,6 +1,6 @@
 
 function pruneEmptyStrings(obj) {
-    Object.keys(obj).forEach(k => {
+    Object.keys(obj).forEach(function(k) {
         if (obj[k] === '' || obj[k] === null)
             delete obj[k]
         else if (obj[k] === '')
@@ -12,7 +12,7 @@ function pruneEmptyStrings(obj) {
 }
 
 function pruneEmptyObjects(obj) {
-    Object.keys(obj).forEach(k => {
+    Object.keys(obj).forEach(function(k) {
         if (typeof obj === 'object' && !Array.isArray(obj))
             pruneEmptyObjects(obj[k])
         if (typeof obj[k] === 'object' && Object.keys(obj[k]).length === 0)
@@ -22,7 +22,7 @@ function pruneEmptyObjects(obj) {
 }
 
 function pruneEmptyArrays(obj) {
-    Object.keys(obj).forEach(k => {
+    Object.keys(obj).forEach(function(k) {
         if (Array.isArray(obj[k]) && obj[k].length === 0) {
             delete obj[k]
         } else if (typeof obj === 'object' && !Array.isArray(obj)) {
